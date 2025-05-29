@@ -1,134 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Larica & La Rica</title>
-  <style>
-    /* Reset e configurações básicas */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Arial', sans-serif;
-      color: #1C1C1C;
-      line-height: 1.6;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    /* Seção Hero */
-    .hero {
-      background-color: #CDE5D1; /* Verde menta */
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero img {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .hero .button {
-      background-color: #F7C45A; /* Amarelo ouro */
-      color: #1C1C1C;
-      padding: 15px 30px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    .hero .button:hover {
-      background-color: #e6b945;
-    }
-    /* Seções gerais */
-    section {
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    section p {
-      font-size: 1.1rem;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    /* Chamada para ação */
-    .call-to-action {
-      background-color: #F9B3C2; /* Rosa doce */
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .call-to-action .button {
-      background-color: #F7C45A;
-      color: #1C1C1C;
-      padding: 15px 30px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    .call-to-action .button:hover {
-      background-color: #e6b945;
-    }
-    /* Rodapé */
-    footer {
-      background-color: #F9B3C2;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    footer p {
-      margin-bottom: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larica & La Rica</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Seção Hero com logo e chamada -->
-  <header class="hero">
-    <!-- Substitua "logo.png" pela URL ou caminho da sua imagem de logo -->
-    <img src="logo.png" alt="Larica & La Rica">
-    <h1>É só um docinho... ou não.</h1>
-    <a href="#call" class="button">Descubra o sabor</a>
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="Larica & La Rica Logo" class="logo">
+            <h1>É só um docinho... ou não.</h1>
+            <a href="#sobre" class="cta-button">Descubra o sabor</a>
+        </div>
+    </section>
 
-  <!-- Seção "Sobre a Marca" -->
-  <section id="about">
-    <h2>Sobre a Larica & La Rica</h2>
-    <p>
-      Numa noite de larica e churrasco, um grupo de amigos se reuniu e, entre risadas e snacks, nasceu a ideia inovadora. Inspirados num salgadinho chamado "snacks" e num trocadilho inusitado, criamos a Larica – uma marca que traz o melhor do sabor com um toque de mistério.
-    </p>
-  </section>
+    <!-- Sobre a Marca -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-content">
+            <h2>Sobre a Larica & La Rica</h2>
+            <p>Numa noite de larica e churrasco, nasceu uma ideia.</p>
+            <p>Entre risadas e snacks, surgiu o nome: Larica. Um grupo de amigos, uma brisa criativa e a vontade de fazer algo que batesse diferente. O resto... você sente no primeiro pedaço.</p>
+        </div>
+    </section>
 
-  <!-- Seção "O que é Larica & La Rica" -->
-  <section id="products">
-    <h2>O que é Larica & La Rica</h2>
-    <p>
-      Mais do que doces para adultos – é uma experiência única. Combinamos receitas criativas e irresistíveis para quem tem coragem de provar o sabor que bate diferente.
-    </p>
-  </section>
+    <!-- O que é a Larica & La Rica -->
+    <section class="o-que-e">
+        <div class="o-que-e-content">
+            <h2>O que é a Larica & La Rica?</h2>
+            <p>Doces pra adultos, feitos com carinho, criatividade e aquele toque especial. Não vendemos só brownies, pirulitos ou balas...</p>
+            <p><strong>Entregamos experiências para quem tem coragem de ir além do sabor.</strong></p>
+        </div>
+    </section>
 
-  <!-- Chamada para ação -->
-  <section id="call" class="call-to-action">
-    <h2>Quer provar?</h2>
-    <p>Fale com a gente no WhatsApp e descubra uma nova experiência.</p>
-    <!-- Substitua o link abaixo pelo seu número de WhatsApp no formato "https://wa.me/55XXXXXXXXXX" -->
-    <a href="https://wa.me/55XXXXXXXXXX" class="button">Entre em contato</a>
-  </section>
+    <!-- Chamada para Encomendas -->
+    <section class="encomendas">
+        <div class="encomendas-content">
+            <h2>Quer provar? Fala com a gente no WhatsApp!</h2>
+            <a href="https://wa.me/1234567890" class="cta-button">Contato no WhatsApp</a>
+        </div>
+    </section>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>Feito com amor, açúcar e mistério.</p>
-    <p>Siga-nos: Instagram | WhatsApp | TikTok</p>
-  </footer>
+    <!-- Rodapé -->
+    <footer>
+        <p>Feito com amor, açúcar e mistério.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/laricaelrica" target="_blank">Instagram</a>
+            <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
 </body>
 </html>
