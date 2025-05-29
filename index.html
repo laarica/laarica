@@ -1,11 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Larica & La Rica</title>
+  <title>Larica & La Rica - Em Breve</title>
   <style>
-    /* Reset e configurações básicas */
+    :root {
+      --rosa: #F9B3C2;
+      --verde-menta: #CBE6D3;
+      --amarelo: #F7C45A;
+      --marrom: #4C2F27;
+      --preto: #1C1C1C;
+    }
     * {
       margin: 0;
       padding: 0;
@@ -13,131 +20,74 @@
     }
     body {
       font-family: 'Arial', sans-serif;
-      color: #1C1C1C;
-      line-height: 1.6;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    /* Seção Hero */
-    .hero {
-      background-color: #CBE6D3;
+      background: linear-gradient(135deg, var(--rosa), var(--verde-menta), var(--amarelo));
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+      color: var(--preto);
       text-align: center;
-      padding: 100px 20px;
+      padding: 5vw 4vw;
     }
-    .hero img {
-      max-width: 200px;
-      width: 100%;
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .logo {
+      width: 50vw;
+      max-width: 400px;
       height: auto;
-      margin-bottom: 20px;
+      margin: 0 auto 5vh;
+      filter: drop-shadow(0 0 10px #fff);
     }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    h1 {
+      font-size: 6vw;
+      max-font-size: 48px;
+      margin-bottom: 2vh;
+      text-shadow: 2px 2px #ffffff88;
     }
-    .hero .button {
-      background-color: #F7C45A; /* Amarelo ouro */
-      color: #1C1C1C;
-      padding: 15px 30px;
-      border-radius: 5px;
+    .slogan {
+      font-style: italic;
+      font-size: 4vw;
+      max-font-size: 24px;
+      margin-bottom: 5vh;
+      color: var(--marrom);
+      text-shadow: 1px 1px #fefefe;
+    }
+    .cta {
+      margin-top: 4vh;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 3vw 6vw;
+      background-color: #FFDD57;
+      color: var(--preto);
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 4vw;
+      max-font-size: 18px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 0 12px #f7c45a80;
     }
-    .hero .button:hover {
-      background-color: #e6b945;
+    .cta a:hover {
+      background-color: #ffe372;
+      transform: scale(1.05);
     }
-    /* Seções gerais */
-    section {
-      padding: 60px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    section p {
-      font-size: 1.1rem;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    /* Chamada para ação */
-    .call-to-action {
-      background-color: #F9B3C2; /* Rosa doce */
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .call-to-action .button {
-      background-color: #F7C45A;
-      color: #1C1C1C;
-      padding: 15px 30px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    .call-to-action .button:hover {
-      background-color: #e6b945;
-    }
-    /* Rodapé */
-    footer {
-      background-color: #F9B3C2;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    footer p {
-      margin-bottom: 5px;
+
+    /* Media Queries para responsividade */
+    @media (min-width: 768px) {
+      h1 { font-size: 3rem; }
+      .slogan { font-size: 1.5rem; }
+      .cta a { font-size: 1.1rem; padding: 14px 28px; }
     }
   </style>
 </head>
 <body>
-  <!-- Seção Hero com logo e chamada -->
-  <header class="hero">
-    <!-- Substitua "logo.png" pela URL ou caminho da sua imagem de logo -->
-    <img src="logo.png" alt="Larica & La Rica">
-    <h1>É só um docinho... ou não.</h1>
-    <a href="#call" class="button">Descubra o sabor</a>
-  </header>
-
-  <!-- Seção "Sobre a Marca" -->
-  <section id="about">
-    <h2>De onde veio essa larica?</h2>
-    <p>
-      Era pra ser só um churrasco entre amigos. Uma daquelas noites em que a conversa flui, a risada é solta e a fome bate mais forte que o som da caixa.
-    </p>
-    <p>
-      No meio da bagunça, alguém soltou: <em>“isso aqui tá dando uma larica danada”</em>. A frase ficou no ar... e dali surgiu a faísca. Rimos, piramos, e em poucos minutos já estávamos inventando nomes, sabores e até uma mascote.
-    </p>
-    <p>
-      Assim nasceu a <strong>Larica & La Rica</strong>: uma ideia que parece brincadeira, mas que a cada mordida entrega algo diferente. É doce, é provocante, e tem aquele quê de “será que pode?”
-    </p>
-    <p>
-      Do improviso da churrasqueira pro seu feed — a gente transforma larica em experiência. E sim... ainda parece só um docinho.
-    </p>
-  </section>
-  
-  <!-- Seção "O que é Larica & La Rica" -->
-  <section id="products">
-    <h2>O que é Larica & La Rica</h2>
-    <p>
-      Mais do que doces para adultos – é uma experiência única. Combinamos receitas criativas e irresistíveis para quem tem coragem de provar o sabor que bate diferente.
-    </p>
-  </section>
-
-  <!-- Chamada para ação -->
-  <section id="call" class="call-to-action">
-    <h2>Quer provar?</h2>
-    <p>Segue a gente no Instagram e descobre o sabor que bate diferente.</p>
-    <a href="https://instagram.com/laahrica" target="_blank" class="button">@laahrica</a>
-  </section>
-
-
-  <!-- Rodapé -->
-  <footer>
-    <p>Feito com amor, açúcar e mistério.</p>
-    <p>Siga-nos: Instagram | WhatsApp | TikTok</p>
-  </footer>
+  <img src="logo.png" alt="Larica & La Rica" class="logo">
+  <h1>Estamos chegando...</h1>
+  <p class="slogan">O sabor que bate diferente</p>
+  <div class="cta">
+    <a href="https://instagram.com/laahrica" target="_blank">@laahrica no Instagram</a>
+  </div>
 </body>
 </html>
